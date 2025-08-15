@@ -36,14 +36,24 @@
           <p><strong>WhatsApp:</strong> <a href="https://wa.me/18763468970" target="_blank" rel="noopener">Message Us</a></p>
           <p><strong>Instagram:</strong> <a href="https://www.instagram.com/ayuhthat_ja" target="_blank" rel="noopener">@ayuhthat_ja</a></p>
         </div>
-        <form class="contact-form" method="post" action="#" onsubmit="event.preventDefault(); alert('Thanks for reaching out! We will get back to you shortly.'); return false;">
+        <form class="contact-form" method="POST" action="https://formspree.io/f/your-form-id">
           <label for="name">Name<span aria-hidden="true">*</span></label>
           <input id="name" name="name" type="text" required />
           <label for="email">Email<span aria-hidden="true">*</span></label>
-          <input id="email" name="email" type="email" required />
+          <!-- Mailto replaced with Formspree reply-to field -->
+          <input id="email" name="_replyto" type="email" required />
           <label for="message">Message<span aria-hidden="true">*</span></label>
           <textarea id="message" name="message" rows="6" required></textarea>
           <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay updated with our latest products, wellness tips and exclusive offers.</p>
+        <!-- Mailchimp embed placeholder – replace the form action and hidden fields with your own Mailchimp embed code -->
+        <form action="https://example.us1.list-manage.com/subscribe/post" method="post" target="_blank" novalidate>
+          <input type="email" name="EMAIL" placeholder="Your email" required />
+          <button type="submit" class="btn-secondary">Subscribe</button>
         </form>
       </div>
     </div>
