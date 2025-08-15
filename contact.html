@@ -36,15 +36,18 @@
           <p><strong>WhatsApp:</strong> <a href="https://wa.me/18763468970" target="_blank" rel="noopener">Message Us</a></p>
           <p><strong>Instagram:</strong> <a href="https://www.instagram.com/ayuhthat_ja" target="_blank" rel="noopener">@ayuhthat_ja</a></p>
         </div>
-        <form class="contact-form" method="POST" action="https://formspree.io/f/your-form-id">
-          <label for="name">Name<span aria-hidden="true">*</span></label>
-          <input id="name" name="name" type="text" required />
-          <label for="email">Email<span aria-hidden="true">*</span></label>
-          <!-- Mailto replaced with Formspree reply-to field -->
-          <input id="email" name="_replyto" type="email" required />
-          <label for="message">Message<span aria-hidden="true">*</span></label>
-          <textarea id="message" name="message" rows="6" required></textarea>
-          <button type="submit" class="btn-primary">Send Message</button>
+        <form class="contact-form" method="POST" action="https://crm.zoho.com/crm/WebToLeadForm">
+          <p class="small-note">This form integrates with Zoho CRM. Replace the hidden field values with those generated from your Zoho Webform.</p>
+          <input type="text" name="Last Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Email Address" required>
+          <input type="text" name="Phone" placeholder="Phone Number">
+          <textarea name="Description" placeholder="How can we help you?" rows="6"></textarea>
+          <!-- Hidden fields required by Zoho CRM. Replace these with your form-specific parameters. -->
+          <input type="hidden" name="xnQsjsdp" value="YOUR_FORM_ID_HERE">
+          <input type="hidden" name="zc_gad" value="">
+          <input type="hidden" name="actionType" value="TGVhZHM=">
+          <input type="hidden" name="returnURL" value="https://ayuhthat.com/thank-you.html">
+          <button type="submit" class="btn-primary">Submit</button>
         </form>
       </div>
       <div class="newsletter">

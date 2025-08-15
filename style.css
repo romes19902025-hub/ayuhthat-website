@@ -389,3 +389,27 @@ h2 {
     font-size: 1rem;
   }
 }
+
+/* Gumroad purchase buttons styling */
+.gumroad-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.gumroad-button {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Disabled state for out‑of‑stock items */
+.gumroad-button.disabled {
+  pointer-events: none;
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}

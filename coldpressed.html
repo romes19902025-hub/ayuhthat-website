@@ -54,50 +54,17 @@
             <li>1&nbsp;Gallon – J$18,000</li>
           </ul>
           <div class="payment-section">
-            <h3>Order Online</h3>
-            <p>Secure payments processed via PayPal (placeholder).  Select a size to purchase.</p>
-            <!-- PayPal Buy Now buttons -->
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-              <input type="hidden" name="cmd" value="_xclick">
-              <input type="hidden" name="business" value="your-paypal-email@example.com">
-              <input type="hidden" name="item_name" value="Cold‑Pressed Castor Oil – 60 mL">
-              <input type="hidden" name="amount" value="700">
-              <input type="hidden" name="currency_code" value="JMD">
-              <button type="submit" class="btn-primary">Buy Now – 60 mL</button>
-            </form>
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-              <input type="hidden" name="cmd" value="_xclick">
-              <input type="hidden" name="business" value="your-paypal-email@example.com">
-              <input type="hidden" name="item_name" value="Cold‑Pressed Castor Oil – 120 mL">
-              <input type="hidden" name="amount" value="1200">
-              <input type="hidden" name="currency_code" value="JMD">
-              <button type="submit" class="btn-primary">Buy Now – 120 mL</button>
-            </form>
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-              <input type="hidden" name="cmd" value="_xclick">
-              <input type="hidden" name="business" value="your-paypal-email@example.com">
-              <input type="hidden" name="item_name" value="Cold‑Pressed Castor Oil – 240 mL">
-              <input type="hidden" name="amount" value="2400">
-              <input type="hidden" name="currency_code" value="JMD">
-              <button type="submit" class="btn-primary">Buy Now – 240 mL</button>
-            </form>
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-              <input type="hidden" name="cmd" value="_xclick">
-              <input type="hidden" name="business" value="your-paypal-email@example.com">
-              <input type="hidden" name="item_name" value="Cold‑Pressed Castor Oil – 480 mL">
-              <input type="hidden" name="amount" value="4800">
-              <input type="hidden" name="currency_code" value="JMD">
-              <button type="submit" class="btn-primary">Buy Now – 480 mL</button>
-            </form>
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-              <input type="hidden" name="cmd" value="_xclick">
-              <input type="hidden" name="business" value="your-paypal-email@example.com">
-              <input type="hidden" name="item_name" value="Cold‑Pressed Castor Oil – 1 Gallon">
-              <input type="hidden" name="amount" value="18000">
-              <input type="hidden" name="currency_code" value="JMD">
-              <button type="submit" class="btn-primary">Buy Now – 1 Gallon</button>
-            </form>
+            <h3>Purchase via Gumroad</h3>
+            <p>Select a size and purchase securely through Gumroad (replace the placeholder URLs with your actual product links).</p>
+            <div class="gumroad-buttons">
+              <a id="coldpressed-60" class="gumroad-button btn-primary" href="https://ayuhthat.gumroad.com/l/coldpressed60" data-product="coldpressed" data-size="60">Buy 60 mL – J$700</a>
+              <a id="coldpressed-120" class="gumroad-button btn-primary" href="https://ayuhthat.gumroad.com/l/coldpressed120" data-product="coldpressed" data-size="120">Buy 120 mL – J$1,200</a>
+              <a id="coldpressed-240" class="gumroad-button btn-primary" href="https://ayuhthat.gumroad.com/l/coldpressed240" data-product="coldpressed" data-size="240">Buy 240 mL – J$2,400</a>
+              <a id="coldpressed-480" class="gumroad-button btn-primary" href="https://ayuhthat.gumroad.com/l/coldpressed480" data-product="coldpressed" data-size="480">Buy 480 mL – J$4,800</a>
+              <a id="coldpressed-3785" class="gumroad-button btn-primary" href="https://ayuhthat.gumroad.com/l/coldpressed1gal" data-product="coldpressed" data-size="3785">Buy 1 Gallon – J$18,000</a>
+            </div>
             <p class="small-note">Prefer to pay via cash, bank transfer or another method? <a href="contact.html">Get in touch</a>.</p>
+            <script src="https://gumroad.com/js/gumroad.js"></script>
           </div>
         </div>
       </div>
@@ -118,6 +85,10 @@
         navigator.serviceWorker.register('service-worker.js');
       });
     }
+    // Load inventory management script to update stock availability for Cold‑Pressed variants
+    const invScriptCold = document.createElement('script');
+    invScriptCold.src = 'inventory.js';
+    document.body.appendChild(invScriptCold);
   </script>
 </body>
 </html>

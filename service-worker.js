@@ -17,6 +17,8 @@ const urlsToCache = [
   '/images/product-coldpressed.jpg',
   '/images/product-organic.jpg',
   '/icons/icon-512.png'
+  ,'/inventory.json'
+  ,'/inventory.js'
 ];
 
 // Install event: cache defined assets
