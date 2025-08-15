@@ -1,0 +1,335 @@
+/*
+  Ayuhthat Castor Oil website styling
+  Colour palette inspired by the Jamaican flag – black, gold and green.  
+  Styles are designed to meet WCAG AA contrast requirements.  
+*/
+
+/* CSS reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #121212; /* deep black for background */
+  color: #f2f2f2; /* light grey for text for high contrast */
+}
+
+a {
+  color: #f5b800; /* golden accent color */
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Navigation */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 0.5rem 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.logo {
+  height: 48px;
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: #f2f2f2;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+  color: #00a650;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  height: 80vh;
+  background-image: url('images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #f5b800;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #00a650;
+  color: #121212;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #007a3f;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #f5b800;
+  color: #121212;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #d4a000;
+  color: #fff;
+}
+
+/* Generic sections */
+.section {
+  padding: 4rem 1rem;
+}
+.section-light {
+  background-color: #f9f9f9;
+  color: #121212;
+}
+.section-dark {
+  background-color: #0b0b0b;
+  color: #f2f2f2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #00a650;
+}
+
+/* Product grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: #fff;
+  color: #121212;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  flex: 1 1 300px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  min-height: 60px;
+}
+
+.sizes {
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+/* Education list */
+.education-list {
+  list-style: disc inside;
+  line-height: 1.7;
+  padding-left: 0.5rem;
+  margin-top: 1rem;
+}
+
+.education-list li {
+  margin-bottom: 0.75rem;
+}
+
+/* Contact section */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-info {
+  flex: 1 1 250px;
+  font-size: 1rem;
+}
+
+.contact-form {
+  flex: 1 1 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  align-self: flex-start;
+}
+
+/* Product detail layout */
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+
+.product-detail-image {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.product-detail-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.product-detail-text {
+  flex: 2 1 400px;
+}
+
+.product-detail-text h3 {
+  color: #00a650;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-detail-text ul {
+  margin-left: 1rem;
+  list-style: disc outside;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.product-detail-text ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #0b0b0b;
+  color: #f2f2f2;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #f5b800;
+  margin: 0 0.25rem;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}

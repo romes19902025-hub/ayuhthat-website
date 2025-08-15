@@ -1,0 +1,16 @@
+{
+  "name": "Ayuhthat Castor Oil",
+  "short_name": "Ayuhthat",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#121212",
+  "background_color": "#121212",
+  "description": "Pure, powerful and proven castor oil crafted in Jamaica.",
+  "icons": [
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

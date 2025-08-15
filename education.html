@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Education – Authenticity & Counterfeit Awareness</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="icons/icon-512.png" />
+</head>
+<body>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html#home" class="logo-link" aria-label="Ayuhthat home">
+        <img src="images/logo.png" alt="Ayuhthat logo" class="logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="education.html" class="active">Education</a></li>
+        <li><a href="price-list.html">Price List</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="section section-dark">
+    <div class="container">
+      <h1>Authenticity &amp; Counterfeit Awareness</h1>
+      <p>At Ayuhthat we take pride in sourcing, processing and bottling our castor oil right here in Jamaica.  Our products are 100 % Jamaican and trusted for generations【962632955126257†L94-L98】.  Unfortunately, fake Jamaican castor oil exists – up to 70 % of products sold abroad may not originate from Jamaica【713730680423052†L82-L110】.  Educated consumers are our best defence against counterfeiting.</p>
+      <h2>How to Spot Real Jamaican Black Castor Oil</h2>
+      <ul class="education-list">
+        <li><strong>Check the label &amp; packaging:</strong> authentic oil clearly states that it’s made in Jamaica and lists the ingredients (pure castor oil)【713730680423052†L92-L99】.</li>
+        <li><strong>Colour &amp; consistency:</strong> real Jamaican black castor oil has a dark brown colour and thick, viscous texture from the ash created during roasting【713730680423052†L122-L127】.</li>
+        <li><strong>Smell:</strong> expect a roasted, nutty aroma – not a chemical or floral perfume.</li>
+        <li><strong>Price:</strong> if the price is suspiciously low, be wary – counterfeit products are often cheap because they’re diluted or mislabelled【713730680423052†L127-L130】.</li>
+        <li><strong>Red flags:</strong> products with a light colour, thin consistency or unusual smell may be counterfeit【713730680423052†L131-L134】.</li>
+      </ul>
+      <h2>Why Counterfeits Are a Problem</h2>
+      <p>Fake castor oil undermines the authenticity and reputation of Jamaican black castor oil as a natural remedy.  Mislabelled or diluted products can disappoint consumers and reduce trust in all brands【713730680423052†L82-L110】.  By choosing Ayuhthat and other reputable producers, you support local farmers, traditional processing and the communities that rely on this heritage crop.</p>
+      <p><a href="contact.html" class="btn-primary">Contact Us</a> to learn more about our authenticity measures, GI readiness and seed‑to‑bottle traceability.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; <span id="year-edu"></span> Ayuhthat Jamaica Ltd. All rights reserved.</p>
+      <p>Follow us on <a href="https://www.instagram.com/ayuhthat_ja" target="_blank" rel="noopener">Instagram</a> &nbsp;|&nbsp; <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year-edu').textContent = new Date().getFullYear();
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
+</body>
+</html>

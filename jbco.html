@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Jamaican Black Castor Oil – Ayuhthat</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="icons/icon-512.png" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html#home" class="logo-link" aria-label="Ayuhthat home">
+        <img src="images/logo.png" alt="Ayuhthat logo" class="logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="price-list.html">Price List</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="section section-light">
+    <div class="container">
+      <h1>Jamaican Black Castor Oil</h1>
+      <div class="product-detail">
+        <div class="product-detail-image">
+          <img src="images/product-jbco-single.jpg" alt="Jamaican Black Castor Oil bottle" />
+        </div>
+        <div class="product-detail-text">
+          <p>Our Jamaican Black Castor Oil (JBCO) is made by roasting and cold‑pressing locally sourced castor beans in small batches.  The roasting process produces ash that gives the oil its characteristic dark colour and nutty, smoky aroma.  As a traditional remedy, it has been used for generations in Jamaica to support hair growth, nourish the skin and promote overall wellness.</p>
+          <h3>Benefits</h3>
+          <ul>
+            <li>Stimulates hair growth and reduces dandruff thanks to its antifungal and antibacterial properties</li>
+            <li>Relieves inflammation, muscle and joint pain</li>
+            <li>Improves skin conditions such as acne and eczema</li>
+            <li>Supports immune system function and overall health</li>
+            <li>Reduces menstrual cramps and symptoms</li>
+            <li>Helps detoxify the body by improving circulation</li>
+          </ul>
+          <h3>Available Sizes &amp; Pricing</h3>
+          <p>Choose from the following sizes:</p>
+          <ul>
+            <li>60&nbsp;mL – J$600</li>
+            <li>120&nbsp;mL – J$1,200</li>
+            <li>240&nbsp;mL – J$2,400</li>
+            <li>480&nbsp;mL – J$4,800</li>
+            <li>1&nbsp;Gallon – J$18,000</li>
+          </ul>
+          <p><a href="contact.html" class="btn-primary">Place Order</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; <span id="year-jbco"></span> Ayuhthat Jamaica Ltd. All rights reserved.</p>
+      <p>Follow us on <a href="https://www.instagram.com/ayuhthat_ja" target="_blank" rel="noopener">Instagram</a> &nbsp;|&nbsp; <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year-jbco').textContent = new Date().getFullYear();
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
+</body>
+</html>

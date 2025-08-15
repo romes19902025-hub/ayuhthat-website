@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Price List – Ayuhthat</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="icons/icon-512.png" />
+</head>
+<body>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html#home" class="logo-link" aria-label="Ayuhthat home">
+        <img src="images/logo.png" alt="Ayuhthat logo" class="logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="price-list.html" class="active">Price List</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="section section-light">
+    <div class="container">
+      <h1>Price List</h1>
+      <p>Below is a convenient reference of our current retail pricing for all product types and sizes.  For wholesale enquiries or bulk orders, please <a href="contact.html">contact us</a> for a customised quote.</p>
+      <div class="price-table-wrapper">
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Size</th>
+              <th>Price (JMD)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="5">Jamaican Black Castor Oil</td>
+              <td>60&nbsp;mL</td>
+              <td>600</td>
+            </tr>
+            <tr>
+              <td>120&nbsp;mL</td>
+              <td>1,200</td>
+            </tr>
+            <tr>
+              <td>240&nbsp;mL</td>
+              <td>2,400</td>
+            </tr>
+            <tr>
+              <td>480&nbsp;mL</td>
+              <td>4,800</td>
+            </tr>
+            <tr>
+              <td>1&nbsp;Gallon</td>
+              <td>18,000</td>
+            </tr>
+            <tr>
+              <td rowspan="5">Cold‑Pressed Castor Oil</td>
+              <td>60&nbsp;mL</td>
+              <td>700</td>
+            </tr>
+            <tr>
+              <td>120&nbsp;mL</td>
+              <td>1,200</td>
+            </tr>
+            <tr>
+              <td>240&nbsp;mL</td>
+              <td>2,400</td>
+            </tr>
+            <tr>
+              <td>480&nbsp;mL</td>
+              <td>4,800</td>
+            </tr>
+            <tr>
+              <td>1&nbsp;Gallon</td>
+              <td>18,000</td>
+            </tr>
+            <tr>
+              <td rowspan="5">Organic Blend</td>
+              <td>60&nbsp;mL</td>
+              <td>700</td>
+            </tr>
+            <tr>
+              <td>120&nbsp;mL</td>
+              <td>1,300</td>
+            </tr>
+            <tr>
+              <td>240&nbsp;mL</td>
+              <td>2,600</td>
+            </tr>
+            <tr>
+              <td>480&nbsp;mL</td>
+              <td>5,000</td>
+            </tr>
+            <tr>
+              <td>1&nbsp;Gallon</td>
+              <td>19,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; <span id="year-price"></span> Ayuhthat Jamaica Ltd. All rights reserved.</p>
+      <p>Follow us on <a href="https://www.instagram.com/ayuhthat_ja" target="_blank" rel="noopener">Instagram</a> &nbsp;|&nbsp; <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year-price').textContent = new Date().getFullYear();
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
+</body>
+</html>

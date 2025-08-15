@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Organic Blend – Ayuhthat</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="icons/icon-512.png" />
+</head>
+<body>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html#home" class="logo-link" aria-label="Ayuhthat home">
+        <img src="images/logo.png" alt="Ayuhthat logo" class="logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="price-list.html">Price List</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="section section-light">
+    <div class="container">
+      <h1>Organic Blend (Castor Oil + Jojoba &amp; Frankincense)</h1>
+      <div class="product-detail">
+        <div class="product-detail-image">
+          <img src="images/product-organic.jpg" alt="Organic blend castor oil bottle" />
+        </div>
+        <div class="product-detail-text">
+          <p>This luxurious blend combines the rich, nourishing properties of castor oil with the moisturizing benefits of jojoba oil and the anti‑inflammatory properties of frankincense.  It’s designed for those who want both nourishment and indulgence in a single bottle.</p>
+          <h3>Benefits</h3>
+          <ul>
+            <li>Hydrates and softens skin and hair</li>
+            <li>Reduces inflammation and soothes irritated skin</li>
+            <li>Promotes relaxation and reduces stress</li>
+            <li>Enhances skin elasticity and reduces fine lines and wrinkles</li>
+            <li>Eases joint &amp; muscle pain – castor oil provides anti‑inflammatory effects while frankincense reduces pain and swelling</li>
+            <li>Fades scars &amp; stretch marks by regenerating skin cells</li>
+            <li>Reduces wrinkles &amp; fine lines – frankincense is known for its anti‑aging properties</li>
+          </ul>
+          <h3>Available Sizes &amp; Pricing</h3>
+          <ul>
+            <li>60&nbsp;mL – J$700</li>
+            <li>120&nbsp;mL – J$1,300</li>
+            <li>240&nbsp;mL – J$2,600</li>
+            <li>480&nbsp;mL – J$5,000</li>
+            <li>1&nbsp;Gallon – J$19,000</li>
+          </ul>
+          <p><a href="contact.html" class="btn-primary">Place Order</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; <span id="year-organic"></span> Ayuhthat Jamaica Ltd. All rights reserved.</p>
+      <p>Follow us on <a href="https://www.instagram.com/ayuhthat_ja" target="_blank" rel="noopener">Instagram</a> &nbsp;|&nbsp; <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year-organic').textContent = new Date().getFullYear();
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
+</body>
+</html>

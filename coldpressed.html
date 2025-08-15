@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Cold‑Pressed Castor Oil – Ayuhthat</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="icons/icon-512.png" />
+</head>
+<body>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html#home" class="logo-link" aria-label="Ayuhthat home">
+        <img src="images/logo.png" alt="Ayuhthat logo" class="logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="price-list.html">Price List</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="section section-light">
+    <div class="container">
+      <h1>Cold‑Pressed Castor Oil</h1>
+      <div class="product-detail">
+        <div class="product-detail-image">
+          <img src="images/product-coldpressed.jpg" alt="Cold‑Pressed Castor Oil bottle" />
+        </div>
+        <div class="product-detail-text">
+          <p>Our cold‑pressed castor oil is extracted without heat, preserving delicate antioxidants and fatty acids.  The result is a lighter oil with no strong aroma – perfect for sensitive skin, digestive health and massage therapy.</p>
+          <h3>Benefits</h3>
+          <ul>
+            <li>Reduces inflammation and improves skin conditions</li>
+            <li>Supports digestive health and relieves constipation</li>
+            <li>Helps reduce stress and anxiety</li>
+            <li>Supports immune system function and overall health</li>
+            <li>Acts as a natural detoxifier that helps cleanse the liver</li>
+            <li>Promotes healthy skin and hair growth</li>
+            <li>Boosts immunity and supports lymphatic drainage</li>
+            <li>Can be used as a massage oil to ease joint pain and inflammation</li>
+          </ul>
+          <h3>Available Sizes &amp; Pricing</h3>
+          <ul>
+            <li>60&nbsp;mL – J$700</li>
+            <li>120&nbsp;mL – J$1,200</li>
+            <li>240&nbsp;mL – J$2,400</li>
+            <li>480&nbsp;mL – J$4,800</li>
+            <li>1&nbsp;Gallon – J$18,000</li>
+          </ul>
+          <p><a href="contact.html" class="btn-primary">Place Order</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; <span id="year-cold"></span> Ayuhthat Jamaica Ltd. All rights reserved.</p>
+      <p>Follow us on <a href="https://www.instagram.com/ayuhthat_ja" target="_blank" rel="noopener">Instagram</a> &nbsp;|&nbsp; <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year-cold').textContent = new Date().getFullYear();
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
+</body>
+</html>

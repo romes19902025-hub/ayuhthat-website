@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ayuhthat – authentic Jamaican castor oil. Experience pure, powerful and proven hair & skin care products from Jamaica." />
+  <title>Ayuhthat Castor Oil – Pure. Powerful. Proven.</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="icons/icon-512.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="logo-link" aria-label="Ayuhthat home">
+        <img src="images/logo.png" alt="Ayuhthat logo" class="logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="price-list.html">Price List</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Pure. Powerful. Proven.</h1>
+      <p>Experience the gold standard in Jamaican castor oil – grown, harvested and bottled in Jamaica.</p>
+      <a href="#products" class="btn-primary">Shop Now</a>
+    </div>
+  </header>
+
+  <!-- Products Section -->
+  <section id="products" class="section section-light">
+    <div class="container">
+      <h2>Our Products</h2>
+      <p>Every bottle of Ayuhthat castor oil is handcrafted in Jamaica using traditional methods and 100 % pure ingredients.  Explore our range and click on a product to learn more.</p>
+      <div class="product-grid">
+        <!-- JBCO Card -->
+        <article class="product-card">
+          <img src="images/product-jbco-single.jpg" alt="Jamaican Black Castor Oil bottle" class="product-image" />
+          <h3>Jamaican Black Castor Oil</h3>
+          <p class="product-description">Traditional remedy rich in fatty acids and ash. Supports hair growth, nourishes skin and soothes inflammation.</p>
+          <div class="sizes">
+            <span>60 mL – J$600</span>
+            <span>120 mL – J$1,200</span>
+            <span>240 mL – J$2,400</span>
+          </div>
+          <a href="jbco.html" class="btn-secondary">Learn More</a>
+        </article>
+        <!-- Cold‑Pressed Card -->
+        <article class="product-card">
+          <img src="images/product-coldpressed.jpg" alt="Cold‑Pressed Castor Oil bottle" class="product-image" />
+          <h3>Cold‑Pressed Castor Oil</h3>
+          <p class="product-description">Virgin castor oil extracted without heat to preserve antioxidants. Ideal for sensitive skin, digestive health and stress relief.</p>
+          <div class="sizes">
+            <span>60 mL – J$700</span>
+            <span>120 mL – J$1,200</span>
+            <span>240 mL – J$2,400</span>
+          </div>
+          <a href="coldpressed.html" class="btn-secondary">Learn More</a>
+        </article>
+        <!-- Organic Blend Card -->
+        <article class="product-card">
+          <img src="images/product-organic.jpg" alt="Organic blend castor oil bottle" class="product-image" />
+          <h3>Organic Blend</h3>
+          <p class="product-description">Luxurious blend with jojoba and frankincense. Hydrates skin and hair, fades scars and reduces wrinkles.</p>
+          <div class="sizes">
+            <span>60 mL – J$700</span>
+            <span>120 mL – J$1,300</span>
+            <span>240 mL – J$2,600</span>
+          </div>
+          <a href="organic.html" class="btn-secondary">Learn More</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="section section-dark">
+    <div class="container" style="text-align:center;">
+      <h2>The Ayuhthat Advantage</h2>
+      <p>100 % authentic Jamaican ingredients; eco‑friendly, no additives or fillers; handcrafted with integrity and wellness beyond beauty.</p>
+      <p>Trusted by salons, healers and families worldwide.  Start your journey to vibrant hair, glowing skin and holistic wellness today.</p>
+      <a href="price-list.html" class="btn-primary">View Full Price List</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; <span id="year-index"></span> Ayuhthat Jamaica Ltd. All rights reserved.</p>
+      <p>Follow us on <a href="https://www.instagram.com/ayuhthat_ja" target="_blank" rel="noopener">Instagram</a> &nbsp;|&nbsp; <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year-index').textContent = new Date().getFullYear();
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
+</body>
+</html>
